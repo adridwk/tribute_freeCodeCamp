@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Chelsea+Market&family=Roboto:wght@400;700&display=swap');
+
+/* #f37310 - Orange
+/* #5b594e - Fuscous Gray
+/* #2e2220 - Cocoa Brown
+/* #D0b77c - Straw
+/* #F88418 - Ecstasy */
+
+html {
+  font-size: 10px;
+}
+@media only screen and (max-width: 112.5em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+body {
+  background-color: #5b594e;
+  color: #2e2220;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+span {
+  font-family: 'Chelsea Market', cursive;
+  color: #f37310;
+  font-weight: bold;
+}
+
+#main {
+  width: 95vw;
+  margin: 2rem auto 0;
+  padding: 1em;
+  border-radius: 5em;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+@media only screen and (min-width: 112.5em) {
+  #main {
+    width: 50vw;
+  }
+}
+
+#title {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 4rem;
+  line-height: 1;
+  color: hsl(44, 82%, 35%);
+}
+
+#img-div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 3em;
+}
+
+#img-caption {
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  font-family: 'Acme', sans-serif;
+}
+
+#tribute-info {
+  text-align: center;
+}
+
+#tribute-heading {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: hsl(44, 85%, 29%);
+  font-family: 'Acme', sans-serif;
+}
+
+.tribute-info-list {
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.list-item:not(:last-child):after {
+  content: '';
+  display: block;
+  margin: 1.5rem auto;
+  width: 8rem;
+  border-bottom: 1px solid #5b594e3d;
+}
+
+p {
+  padding: 0;
+  margin-top: 0;
+}
+
+#tribute-link,
+.tribute-link-text {
+  padding: 1rem 0 2rem;
+  color: hsl(44, 85%, 29%);
+  font-family: 'Acme', sans-serif;
+}
