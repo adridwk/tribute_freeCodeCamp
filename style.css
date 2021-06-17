@@ -1,111 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Chelsea+Market&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-/* #f37310 - Orange
-/* #5b594e - Fuscous Gray
-/* #2e2220 - Cocoa Brown
-/* #D0b77c - Straw
-/* #F88418 - Ecstasy */
-
-html {
-  font-size: 10px;
-}
-@media only screen and (max-width: 112.5em) {
-  html {
-    font-size: 62.5%;
-  }
+* {
+  box-sizing: border-box;
 }
 body {
-  background-color: #5b594e;
-  color: #2e2220;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Muli', sans-serif;
+  font-size: 62.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden; /* Don't want to show scroll bars */
+  margin: 0;
 }
 
-span {
-  font-family: 'Chelsea Market', cursive;
-  color: #f37310;
-  font-weight: bold;
+.container {
+  display: flex;
+  width: 90vw;
 }
 
-#main {
-  width: 95vw;
-  margin: 2rem auto 0;
-  padding: 1em;
-  border-radius: 5em;
-  background-color: #f7f7f7;
-  text-align: center;
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 3rem;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 1rem;
+  position: relative;
+  transition: flex 0.7s ease-in;
 }
 
-@media only screen and (min-width: 112.5em) {
-  #main {
-    width: 50vw;
+.panel h3 {
+  font-size: 2.4rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 48rem) {
+  .container {
+    width: 100vw;
   }
-}
 
-#title {
-  font-family: 'Chelsea Market', cursive;
-  font-size: 4rem;
-  line-height: 1;
-  color: hsl(44, 82%, 35%);
-}
-
-#img-div {
-  width: 100%;
-  margin: 0 auto;
-}
-
-#image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 3em;
-}
-
-#img-caption {
-  margin-top: 0.5rem;
-  line-height: 1.5;
-  font-family: 'Acme', sans-serif;
-}
-
-#tribute-info {
-  text-align: center;
-}
-
-#tribute-heading {
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  color: hsl(44, 85%, 29%);
-  font-family: 'Acme', sans-serif;
-}
-
-.tribute-info-list {
-  width: 100%;
-}
-
-.list {
-  list-style: none;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.list-item:not(:last-child):after {
-  content: '';
-  display: block;
-  margin: 1.5rem auto;
-  width: 8rem;
-  border-bottom: 1px solid #5b594e3d;
-}
-
-p {
-  padding: 0;
-  margin-top: 0;
-}
-
-#tribute-link,
-.tribute-link-text {
-  padding: 1rem 0 2rem;
-  color: hsl(44, 85%, 29%);
-  font-family: 'Acme', sans-serif;
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
 }

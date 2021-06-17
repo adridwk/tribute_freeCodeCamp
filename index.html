@@ -4,58 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calvin & Hobbes Tribute</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
     <link rel="stylesheet" href="style.css" />
+    <title>Expanding Cards</title>
   </head>
   <body>
-    <main id="main">
-      <h1 id="title">Calvin & Hobbes</h1>
-      <figure class="img-div" id="img-div">
-        <img
-          src="https://c4.wallpaperflare.com/wallpaper/650/757/190/calvin-and-hobbes-happiness-trees-fall-wallpaper-preview.jpg"
-          alt="Calvin & Hobbes napping in a tree"
-          id="image"
-        />
-        <figcaption id="img-caption">
-          "We're so busy watching out for what's just ahead of us that we don't
-          take time to enjoy where we are" - Calvin & Hobbes
-        </figcaption>
-      </figure>
-      <section id="tribute-info">
-        <h2 id="tribute-heading">
-          Some of the most memorable quotes from Calvin the Terrible...
-        </h2>
-        <div class="tribute-info-list">
-        <ul class="list"</ul>
-          <li class="list-item">
-            <span>Calvin</span>: You know, Hobbes, some days even my lucky rocket ship underpants don’t help.
-          </li>
-          <li class="list-item">
-            <span>Calvin</span>: Everybody seeks happiness! Not me, though! That’s the difference between me and the rest of the world. Happiness isn’t good enough for me! I demand euphoria!
-          </li>
-          <li class="list-item">
-            <span>Calvin</span>: I think night time is dark so you can imagine your fears with less distraction.
-          </li>
-          <li class="list-item">
-            <span>Calvin</span>: As you can see, I have memorized this utterly useless piece of information long enough to pass a test question. I now intend to forget it forever. You’ve taught me nothing except how to cynically manipulate the system. Congratulations.
-          </li>
-          <li class="list-item">
-            <p><span>Calvin</span>: Isn’t it strange that evolution would give us a sense of humour? When you think about it, it’s weird that we have a physiological response to absurdity. We laugh at nonsense. We like it. We think it’s funny. Don’t you think it’s odd that we appreciate absurdity? Why would we develop that way? How does it benefit us?</p>
-            <p><span>Hobbes</span>: I suppose if we couldn’t laugh at things that don’t make sense, we couldn’t react to a lot of life.</p>
-            <p><span>Calvin</span>: (after a long pause) I can’t tell if that’s funny or really scary.</p>          
-            
-          </li>
-        </ul>
-        <p class='tribute-link-text'>
-          All this information you can find on wikipedia, read more here
-          <a
-            href="https://en.wikipedia.org/wiki/Albert_Einstein"
-            id="tribute-link"
-            target="_blank"
-            >Wikipedia entry</a
-          >
-        </p>
+    <div class="container">
+      <div
+        class="panel active"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1393&q=80');
+        "
+      >
+        <h3>Explore the world</h3>
       </div>
-    </main>
+      <div
+        class="panel"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+        "
+      >
+        <h3>Wild Forest</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');
+        "
+      >
+        <h3>Sunny Beach</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+        "
+      >
+        <h3>City on Winter</h3>
+      </div>
+      <div
+        class="panel"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+        "
+      >
+        <h3>Mountains - Clouds</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
